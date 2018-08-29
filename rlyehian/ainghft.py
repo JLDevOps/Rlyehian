@@ -1,9 +1,13 @@
-from dictionary import api_call_definitions
+import os
+import csv
 
-read_path = '/Users/destinesavior/Desktop/Hidden-Desktop/Project/rlyehian/rlyehian/rlyehian/kadishtuor/'
-read_filename = 'words-list.csv'
-write_filename = 'word.csv'
+# Find the word from the dictionary
+def mgahnghft_aimgrluh(aimgrluh):
 
-print api_call_definitions("walk")
+# Translate the sentence
+def ainghft(text):
 
-# create_word_file(read_path, read_filename, write_filename)
+def main():
+
+if __name__=="__main__":
+    main()

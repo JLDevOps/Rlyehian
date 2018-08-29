@@ -1,20 +1,21 @@
-import os
+import setuptools
 
-from setuptools import setup
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-README = open(os.path.join(os.path.dirname(__file__), 'PYPIREADME.rst')).read()
-REQUIREMENTS = [
-    line.strip() for line in open(os.path.join(os.path.dirname(__file__),
-                                               'requirements.txt')).readlines()]
-
-setup(name='rlyehian',
-      version='0.1',
-      long_description=README,
-      url='https://github.com/JLDevOps/Rlyehian',
-      author='JLDevops',
-      author_email='jldevops@gmail.com',
-      license='MIT License',
-      packages=['rlyehian'],
-      install_requires=REQUIREMENTS,
-      zip_safe=False
-      )
+setuptools.setup(
+    name="rlyehian",
+    version="0.1",
+    author="Jimmy Le (JLDevOps)",
+    author_email="jldevops@gmail.com",
+    description="Translate to the language of the \"old ones\" with the serpent's tong in the digital world.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/JLDevOps/Rlyehian",
+    packages=setuptools.find_packages(),
+    classifiers=(
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ),
+)
