@@ -102,3 +102,5 @@ venv3/
 .mypy_cache/
 /venv3/
 
+.idea/*
+.idea/
