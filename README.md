@@ -43,8 +43,8 @@ Below is a code sample on how to translate english to R'lyehian:
             parser.add_argument('-t', '--text', help='Text to Translate', required=True)
             args = vars(parser.parse_args())
             text = args['text']
-            ahahog_compendium()
-            text = ainghft(text)
+            rlyehian.ahahog_compendium()
+            text = rlyehian.ainghft(text)
             print(text)
          
         if __name__ == "__main__":``
