@@ -1,4 +1,3 @@
-from .rlyehian import ainghft
-from .rleyhian import dictionary
+from .ainghft import *
 
 name="rlyehian"

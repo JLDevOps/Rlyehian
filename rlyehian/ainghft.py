@@ -4,11 +4,13 @@ import argparse
 
 compendium = {}
 
+this_dir, this_filename = os.path.split(__file__)
+csv_path = os.path.join(this_dir, "kadishtuor.csv")
 
 # Load old text into the compendium with english being the key
 # compendium = {type, {english | rlyehian}}
 def ahahog_compendium_type():
-    with open('kadishtuor.csv', mode='r') as kadishtuor_file:
+    with open(csv_path, mode='r') as kadishtuor_file:
         reader = csv.reader(kadishtuor_file)
         for row in reader:
             # Get distinct list
@@ -17,11 +19,10 @@ def ahahog_compendium_type():
             if row[0] not in compendium[row[2]]:
                 compendium[row[2]][row[0]] = row[1]
 
-
 # Load the old text into the compendium without word typing
 # compendium = {english | rlyehian}
 def ahahog_compendium():
-    with open('kadishtuor.csv', mode='r') as kadishtuor_file:
+    with open(csv_path, mode='r') as kadishtuor_file:
         reader = csv.reader(kadishtuor_file)
         for row in reader:
             if row[0] not in compendium:
@@ -42,13 +43,11 @@ def ainghft(text):
     text_list = text.split()
     vulgtm = ''
     for word in text_list:
-        print(word)
         aimgrluh = mgahnghft_aimgrluh(word)
         vulgtm += aimgrluh + ' '
-
     return vulgtm
 
-
+# For testing puproses:
 def main():
     parser = argparse.ArgumentParser(description='Rlyehian Translator.  Speak the language of the old ones.')
     parser.add_argument('-t', '--text', help='Text to Translate', required=True)

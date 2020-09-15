@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rlyehian",
-    version="0.1",
+    version="0.2",
     author="Jimmy Le (JLDevOps)",
     author_email="jldevops@gmail.com",
     description="Translate to the language of the \"old ones\" with the serpent's tong in the digital world.",

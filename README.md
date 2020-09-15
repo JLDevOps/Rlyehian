@@ -23,6 +23,12 @@ Install the following Serpent dependencies.
     $ pip install rlyehian
     ```
 
+If you want to use the projects version of the translator, do the following:
+1. Install the Python dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
 ### Usage
 
 #### Sample Translation Code
